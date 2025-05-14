@@ -20,7 +20,7 @@ export default function Menu() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">
+                        <a className="nav-link active" aria-current="page" href="/">
                             Home
                         </a>
                         </li>
@@ -38,21 +38,21 @@ export default function Menu() {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                         >
-                            Dropdown
+                            Cadastros
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                            <a className="dropdown-item" href="#">
-                                Action
+                            <a className="dropdown-item" href="/categoria">
+                                Cadastro de Categorias
                             </a>
                             </li>
                             <li>
-                            <a className="dropdown-item" href="#">
-                                Another action
+                            <a className="dropdown-item" href="/categoria">
+                                Lista de Categorias
                             </a>
                             </li>
                             <li>
-                            <hr /> class="dropdown-divider"
+                            <hr className="dropdown-divider" />
                             </li>
                             <li>
                             <a className="dropdown-item" href="#">
@@ -68,7 +68,6 @@ export default function Menu() {
                             tabIndex={-1}
                             aria-disabled="true"
                         >
-                            Disabled
                         </a>
                         </li>
                     </ul>
