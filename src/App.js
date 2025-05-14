@@ -1,11 +1,17 @@
 import './App.css';
+import Menu from './componentes/Menu';
+import FormCategoria from './paginas/FormCategoria';
+import Home from './paginas/Home';
+import ListaCategoria from './paginas/ListaCategoria.js';
 
 function App() {
   return (
-    <> 
-      <h1>Biblioteca 2025</h1>
-      <button className='btn btn-primary'> Teste</button>
-    </>
+    <div>
+      <Menu />
+      <Home />
+      <ListaCategoria />
+      <FormCategoria />
+    </div>
   );
 }
 
