@@ -42,7 +42,7 @@ export default function Menu() {
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                            <a className="dropdown-item" href="/categoria">
+                            <a className="dropdown-item" href="/categorias">
                                 Cadastro de Categorias
                             </a>
                             </li>
