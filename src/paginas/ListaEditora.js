@@ -2,11 +2,11 @@ import TituloLista from "../componentes/TituloLista";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function ListaAutor(){
+export default function ListaEditora() { 
     const [dados, setDados] = useState([]);
 
     const listar = async () => {
-      let {data} = await axios.get('http://localhost:4000/autor')
+      let {data} = await axios.get('http://localhost:4000/editora')
       console.log(data);
       setDados(data);
     };
@@ -17,40 +17,36 @@ export default function ListaAutor(){
 
     return (
         <> 
-           <TituloLista titulo = "Autores" descricao = "Gerencie aqui os Autores dos livros da biblioteca" rota = "/cadastroautor" />
+           <TituloLista titulo = "Editoras" descricao = "Gerencie aqui as editoras dos livros da biblioteca" rota = "/cadastroeditora" />
            <>
-  {/*DADOS*/}
   <div className="row">
     <div className="col">
       <table className="table">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Foto</th>
             <th scope="col">Id</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Nascimento</th>
+            <th scope="col">Editora</th>
+            <th scope="col">CNPJ</th>
+            <th scope="col">Endereco</th>
           </tr>
         </thead>
         <tbody>
           { dados.map((d, i) => (
-            <tr>
+            <tr key={d.ideditora}>
             <td>
-              <a className="btn btn-primary" href={`/cadastroautor/${d.idautor}`}>Alterar</a>
+              <a className="btn btn-primary" href={`/cadastroeditora/${d.ideditora}`}>Alterar</a>
             </td>
-            <td>
-              <img classname="img-thumbnail" src={d.foto} style={{width:"80px"}}/>
-            </td>
-            <td>{d.idautor}</td>
-            <td>{d.nomeautor}</td>
-            <td>{d.nascimento}</td>
+            <td>{d.ideditora}</td>
+            <td>{d.nomeeditora}</td>
+            <td>{d.cnpj}</td>
+            <td>{d.endereco}</td>
           </tr>
           ) )}
         </tbody>
       </table>
     </div>
   </div>
-  {/*FIM DADOS*/}
 </>
 
         </>
