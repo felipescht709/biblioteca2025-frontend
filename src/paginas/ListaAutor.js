@@ -19,7 +19,6 @@ export default function ListaAutor(){
         <> 
            <TituloLista titulo = "Autores" descricao = "Gerencie aqui os Autores dos livros da biblioteca" rota = "/cadastroautor" />
            <>
-  {/*DADOS*/}
   <div className="row">
     <div className="col">
       <table className="table">
@@ -50,7 +49,6 @@ export default function ListaAutor(){
       </table>
     </div>
   </div>
-  {/*FIM DADOS*/}
 </>
 
         </>

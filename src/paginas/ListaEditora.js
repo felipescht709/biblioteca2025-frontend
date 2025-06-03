@@ -17,7 +17,9 @@ export default function ListaEditora() {
 
     return (
         <> 
-           <TituloLista titulo = "Editoras" descricao = "Gerencie aqui as editoras dos livros da biblioteca" rota = "/cadastroeditora" />
+           <TituloLista titulo = "Editoras" 
+           descricao = "Gerencie aqui as editoras dos livros da biblioteca" 
+           rota = "/cadastroeditora" />
            <>
   <div className="row">
     <div className="col">
