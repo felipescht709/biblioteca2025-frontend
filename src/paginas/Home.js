@@ -38,7 +38,7 @@ export default function Home() {
                 <div className="row justify-content-md-center">
                     <div className="col-md-auto">
                         <button
-                            className={`btn btn-secondary btn-lg m-2${categoriaSelecionada === null ? " active" : ""}`}
+                            className={`btn btn-primary btn-lg m-2${categoriaSelecionada === null ? " active" : ""}`}
                             onClick={buscarTodosLivros}
                         >
                             Todas as categorias
